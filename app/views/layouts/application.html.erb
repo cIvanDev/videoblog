@@ -9,7 +9,36 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <%= render partial: "shared/header" %>
+
+  <!-- Left side column. contains the logo and sidebar -->
+  <%= render partial: "shared/aside" %>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <%#<section class="content-header">%>
+      <%#<h1>%>
+        <%#Dashboard%>
+        <%#<small>Version 2.0</small>%>
+      <%#</h1>%>
+      <%#<ol class="breadcrumb">%>
+        <%#<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>%>
+        <%#<li class="active">Dashboard</li>%>
+      <%#</ol>%>
+    <%#</section>%>
+    <section class="content">
+<%= yield %>
+    </section>
+    <!-- Main content -->
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
   </body>
 </html>
+
