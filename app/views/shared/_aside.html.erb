@@ -28,6 +28,9 @@
           <ul class="treeview-menu">
             <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
             <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <% menu_options.each do |option| %>
+              <li> <%= option %> </li>
+            <% end %>
           </ul>
         </li>
       </ul>
